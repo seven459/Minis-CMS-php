@@ -1,5 +1,4 @@
-gi<?php
-
+<?php
 class ArticleManager {
     private array $articles = [];
     private int $nextId = 1;
@@ -12,16 +11,26 @@ class ArticleManager {
         ];
 
         $this->articles[] = $article;
+    }
+    public function modifierArticle($id, $donnees) {
+        return $donnees;
+        }
+<<<<<<< HEAD
+    }
+=======
 
-        return $article;
-    }
+    public function supprimerArticle($id) {
+        foreach ($this->articles as $key => $article) {
+            if ($article['id'] == $id) {
+                unset($this->articles[$key]);
+                $this->articles = array_values($this->articles);
+                return true;
+            }
+        }
+         return false;
+   }
 }
-public function supprimer ($id)}
-foreach($this->articles as $key=>$id){
-    if($article['id']===$id){
-        unset($this->articles[$key]);
-        return true;
-    }
-}
-return false;
-}
+
+>>>>>>> b1db5de7475a9ba25775e492e8ba7e1b7eaeaa2e
+
+ 
