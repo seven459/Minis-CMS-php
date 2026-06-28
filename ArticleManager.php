@@ -1,4 +1,4 @@
-<?php
+gi<?php
 
 class ArticleManager {
     private array $articles = [];
@@ -12,10 +12,16 @@ class ArticleManager {
         ];
 
         $this->articles[] = $article;
-    }
-    public function modifierArticle($id, $donnees) {
-        return $donnees;
-        }
-    }
 
- 
+        return $article;
+    }
+}
+public function supprimer ($id)}
+foreach($this->articles as $key=>$id){
+    if($article['id']===$id){
+        unset($this->articles[$key]);
+        return true;
+    }
+}
+return false;
+}
