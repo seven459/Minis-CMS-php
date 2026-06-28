@@ -12,7 +12,10 @@ class ArticleManager {
         ];
 
         $this->articles[] = $article;
-
-        return $article;
     }
-}
+    public function modifierArticle($id, $donnees) {
+        return $donnees;
+        }
+    }
+
+ 
